@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="Color"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="238dp"
+        android:layout_height="480dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbtMorado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#673AB7"
+            android:buttonTint="#FDFDFD" />
+
+        <RadioButton
+            android:id="@+id/rbtAzul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0022FF"
+            android:buttonTint="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbtRojo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:buttonTint="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbtVerde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00F618"
+            android:buttonTint="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbtAmarillo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFEB3B"
+            android:buttonTint="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbtNaranja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF5722"
+            android:buttonTint="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbtDorado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ECC657"
+            android:buttonTint="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbtCeleste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00BCD4"
+            android:buttonTint="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbtNegro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:buttonTint="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/rbtMarron"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5A4637"
+            android:buttonTint="#FFFFFF" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:drawableBottom="@android:drawable/btn_star_big_on"
+        android:onClick="Color"
+        android:text="Imprimir"
+        app:icon="@color/teal_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/txtColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnColor"
+        app:layout_constraintVertical_bias="0.6" />
+</androidx.constraintlayout.widget.ConstraintLayout>
